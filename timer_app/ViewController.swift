@@ -58,6 +58,7 @@ class ViewController: UIViewController {
     @IBAction func pause(_ sender: Any) {
         timer.invalidate()
         TimerLabel.text = "0"
+        time = 0
         state = true
         TimerButtonLabel.setTitle("Start", for: .normal)
     }
